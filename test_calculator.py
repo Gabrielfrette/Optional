@@ -69,7 +69,7 @@ def test_divide(arg, expected_output):
 def test_multi(arg, expected_output):
     assert multi(arg[0],arg[1]) == expected_output
 
-@pytest.mark.parametrize("arg, expected_output", [[(10, 3), 7], [(50, 25), 25], [(40, 29), 11]])
+@pytest.mark.parametrize("arg, expected_output", [[(10, 4), 6], [(50, 25), 25], [(40, 29), 11]])
 def test_minus(arg, expected_output):
     assert minus(arg[1],arg[0]) == expected_output
 
